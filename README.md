@@ -1,4 +1,4 @@
-#Parser for Hackerrank Leaderboard
+# Parser for Hackerrank Leaderboard
 A tool to parse hackerrank leaderboard data to CSV format.
 
 ### Usage Instuction :
