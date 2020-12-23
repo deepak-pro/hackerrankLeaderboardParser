@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leaderboard Parser for Hackerrank</title>
+	<script src="main.js"></script>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<center>
+	<h1>Leaderboard parser for Hackerrank</h1>
+	<br>
+	<h2>Enter the leaderboard url</h2>
+	<input type="text" name="leaderboardLinkFeild" id="leaderboardLink">
+
+	<input type="button" name="getData" value="Get Data" onclick="getData()">
+	<br><br>
+	<div id="success" hidden>
+	<h3>Parsing done successfully, CSV file will be downlaoded shortly.</h3>
+	</div>
+	<div id="loading" class="loader" hidden></div>
+
+	<div class="footer">
+		<h3>Crafted by Deepak JOSHI, View this project on <a href="https://github.com/deepak-pro/hackerrankLeaderboardParser" target="_blank">Github</a></h3>
+	</div>
+</center>
+</body>
+</html>

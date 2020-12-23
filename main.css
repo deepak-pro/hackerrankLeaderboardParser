@@ -1,0 +1,67 @@
+@font-face {
+	font-family: Raleway ;
+	src : url('assets/Raleway-Light.ttf');
+}
+
+body {
+	font-family: Raleway ;
+}
+
+a{
+	color: white ;
+}
+
+input[type=text] {
+	width: 70% ;
+	padding: 12px 20px ;
+	margin: 8px 0;
+	display: inline-block;
+	border: 2px solid #ccc;
+	border-radius: 10px ;
+	box-sizing: border-box;
+	font-size: 20px ;
+	text-align: center;
+}
+
+input[type=button] {
+	width: 70% ;
+	background-color: #45a049;
+	color: white ;
+	padding: 14px 20px ;
+	margin: 8px 0;
+	border: none;
+	border-radius: 10px ;
+	cursor: pointer;
+	font-size: 20px ;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #45a049;
+   color: white;
+   text-align: center;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
