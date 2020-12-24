@@ -2,6 +2,7 @@ function formatLink(link){
 	var index = link.indexOf("contests") ;
 	if(index == -1){
 		alert("Invalid Link") ;
+		return "" ;
 	}
 	var prefix = link.substring(0,index) ;
 	var suffix = link.substring(index-1,link.length) ;
@@ -10,11 +11,14 @@ function formatLink(link){
 }
 
 function getData(){
-	document.getElementById("loading").removeAttribute("hidden") ;
-	document.getElementById("success").setAttribute("hidden","true") ;
+	
 	var link = document.getElementById("leaderboardLink").value ;
 	link = formatLink(link) ;
-	makeRequest(link) ;
+	if(link !=  ""){
+		document.getElementById("loading").removeAttribute("hidden") ;
+		document.getElementById("success").setAttribute("hidden","true") ;
+		makeRequest(link) ;
+	}
 }
 
 function makeRequest(link){
@@ -31,7 +35,7 @@ function makeRequest(link){
 			//console.log(json) ;
 			parseJSONData(json) ;
 		}).catch(function (err){
-			alert("Error") ;
+			alert("Error " + err) ;
 		})
 }
 
